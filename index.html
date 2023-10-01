@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="#first-page-blue-sky">HOME</a></li>
+            <li><a href="#second-page-yellow">ABOUT ME</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <div class="contact">
+                <a href="">CONTACT</a>
+            </div>
+        </ul>
+
+    </header>
+    <div id="first-page-blue-sky">
+        <div class="first-page-content">
+            <h1 id="center-name">LEONARDO RIMOLO</h1>
+            <h2 id="center-h2">SOFTWARE DEVELOPER</h2>
+        </div>
+            <a href="#second-page-yellow">
+                <div id="animation-container">
+                <script>
+                    var animation = bodymovin.loadAnimation({
+                        container: document.getElementById('animation-container'),
+                        path: './swipe.json',
+                        render: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: 'test',
+        
+        
+                    })
+                </script>
+                </div>
+            </a>
+    </div>
+    <div id="second-page-yellow">
+        <div id="about-me">
+            <h1>ABOUT ME</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti explicabo voluptas maxime animi. Culpa, in totam! Vel, quidem magnam, error tempora obcaecati voluptas optio ad vitae maxime ducimus eligendi beatae?</p>
+        </div>
+        <div id="image">
+            <img src="./assets/png-clipart-simpsons-simpsons-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+   
+</body>
+</html>
