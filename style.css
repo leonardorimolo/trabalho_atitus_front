@@ -81,7 +81,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
@@ -150,6 +150,7 @@ header {
   background-position: center;
   position: relative;
   display: flex;
+  justify-content: space-around;
 }
 
 #about-me {
@@ -181,3 +182,5 @@ header {
 #div-animation {
   width: 100px;
 }
+
+
