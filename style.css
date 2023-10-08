@@ -1,5 +1,4 @@
 /* CSS Reset */
-
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +14,7 @@ body {
   font-family: "Luckiest Guy", cursive;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
@@ -24,14 +22,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -44,32 +35,13 @@ img {
   background: none;
 }
 
-html {
-  box-sizing: border-box;
-}
-header,
-p {
-  margin: 0;
-}
-
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-#first-page-blue-sky {
-  max-width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url(./assets/Wallpaper-Clouds-Figure-Background-Simpsons-Art-Begin131920x1200.webp);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-}
+/* TOPO */
 header {
   z-index: 2;
   width: 100%;
@@ -87,32 +59,37 @@ header {
 
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 50px;
+  width: 700px;
+  justify-content: flex-end;
+
 }
+
 .menu li {
   padding-top: 1%;
   display: flex;
-  width: 150px;
-  flex-shrink: 0;
 }
+
 .menu li a {
   margin: 0 auto;
-  color: #2d759c;
+  color: #fff;
   font-size: 24px;
 }
+
 .menu li a:hover {
   text-decoration: underline;
 }
+
 .contact {
   max-width: 300px;
 }
+
 .contact a {
   padding-top: 5px;
   width: 239px;
   height: 40px;
-  flex-shrink: 0;
   border-radius: 10px;
-  background: #e8727a;
+  background: #A86F13;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,63 +101,219 @@ header {
   background: #fcdb33;
 }
 
+/* PAGINA 1 */
+#first-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: cover;
+}
+
 .first-page-content {
-  padding-top: 25%;
+  padding-top: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
-#center-name {
-  text-align: center;
-  display: block;
-  color: #fcdb33;
-  font-size: 100px;
-}
+
+
 #center-h2 {
   font-size: 48px;
   color: #9c9935;
-  text-align: center;
 }
 
-#second-page-yellow {
-  max-width: 100%;
+
+/* PAGINA 2 */
+#second-page {
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #e8727a;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
+  background-color: #755F3C;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-#about-me {
-  padding-left: 10%;
-  padding-top: 15%;
+#second-page img{
+  border-radius: 10px;
+}
+
+#sobre-nos {
   width: 50%;
 }
-#about-me h1 {
-  color: #fcdb33;
+
+#sobre-nos h1 {
+  color: #F4AB33;
   font-size: 100px;
 }
-#about-me p {
+
+#sobre-nos p {
   font-size: 32px;
   color: #fff;
 }
-#second-page-yellow #image {
-  padding-top: 12%;
+
+/* Animações */
+#animation-seta {
+  width: 200px;
 }
 
-#animation-container {
-  margin: 10% auto;
-  max-width: 200px;
-}
-
-#animation-container2 {
+#animation-rosquinha {
   width: 80px;
 }
 
-#div-animation {
-  width: 100px;
+
+
+#animation-bart {
+  width: 200px;
 }
 
 
+
+/* PAGINA 3 */
+#third-page {
+  width: 100%;
+  height: 200%;
+  background-color: #EA4739;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#third-page h1 {
+  padding-top: 5%;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 500px;
+  max-width: 1280px;
+  min-height: 200px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 400px;
+  width: 400px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 400px;
+  width: 400px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("https://static.wixstatic.com/media/396e33_a1e1105ba20f4268be1d1248d91aad0c~mv2.jpg/v1/fill/w_640,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/396e33_a1e1105ba20f4268be1d1248d91aad0c~mv2.jpg") center center repeat;
+  background-size: 600px;
+}
+.card0:hover {
+  background: url("https://static.wixstatic.com/media/396e33_a1e1105ba20f4268be1d1248d91aad0c~mv2.jpg/v1/fill/w_640,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/396e33_a1e1105ba20f4268be1d1248d91aad0c~mv2.jpg") center center repeat;
+  background-size: 900px;
+}
+.card0:hover h3 {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("https://conteudo.imguol.com.br/45/2018/07/17/mao-santa-burguer-1531851949973_v2_900x506.jpg") center center repeat;
+  background-size: 600px;
+}
+.card1:hover {
+  background: url("https://conteudo.imguol.com.br/45/2018/07/17/mao-santa-burguer-1531851949973_v2_900x506.jpg") center center repeat;
+  background-size: 900px;
+}
+.card1:hover h3 {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("https://www.kcms.com.br/blog/wp-content/uploads/2022/03/cardapio-de-hamburgueria.jpg") center center repeat;
+  background-size: 600px;
+}
+.card2:hover {
+  background: url("https://www.kcms.com.br/blog/wp-content/uploads/2022/03/cardapio-de-hamburgueria.jpg") center right repeat;
+  background-size: 900px;
+}
+.card2:hover h3 {
+  opacity: 1;
+}
+
+h3 {
+  font-family:'luckiest guy';
+  color: white;
+  margin: 20px;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.container2 {
+  width: 100vw;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.card3 {
+  background: url("https://acheiemniteroi.com.br/wp-content/uploads/2022/07/Umah-Hamburgueria.jpeg") center center repeat;
+  background-size: 500px;
+}
+.card3:hover {
+  background: url("https://acheiemniteroi.com.br/wp-content/uploads/2022/07/Umah-Hamburgueria.jpeg") center center repeat;
+  background-size: 900px;
+}
+.card3:hover h3 {
+  opacity: 1;
+}
+
+.card4 {
+  background: url("https://sorocaba.com.br/wp-content/uploads/2022/05/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg") center center repeat;
+  background-size: 450px;
+}
+.card4:hover {
+  background: url("https://sorocaba.com.br/wp-content/uploads/2022/05/c1c05153-f6b6-471f-a45d-276750cc5c1a.jpeg") center center repeat;
+  background-size: 900px;
+}
+.card4:hover h3 {
+  opacity: 1;
+}
+
+.card5 {
+  background: url("https://d31hw7dq38n1ek.cloudfront.net/Imagens/Noticias/Sistema/abc/hamburguerias_em_sao_caetano_do_sul_atlantis_burger_abc_paulista.jpg") center center repeat;
+  background-size: 500px;
+}
+.card5:hover {
+  background: url("https://d31hw7dq38n1ek.cloudfront.net/Imagens/Noticias/Sistema/abc/hamburguerias_em_sao_caetano_do_sul_atlantis_burger_abc_paulista.jpg") center center repeat;
+  background-size: 700px;
+}
+.card5:hover h3 {
+  opacity: 1;
+}

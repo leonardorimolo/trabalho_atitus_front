@@ -16,32 +16,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
     <header>
-      <div id="div-animation"><div id="animation-container2"></div></div>
+      <div id="div-animation">
+        <div id="animation-rosquinha"></div>
+      </div>
       <ul class="menu">
-        <li><a href="#first-page-blue-sky">HOME</a></li>
-        <li><a href="#second-page-yellow">ABOUT ME</a></li>
-        <li><a href="">PROJECTS</a></li>
+        <li><a href="#first-page">HOME</a></li>
+        <li><a href="#second-page">SOBRE NÓS</a></li>
+        <li><a href="">CARDÁPIO</a></li>
+        <li><a href="">LOCALIZAÇÃO</a></li>
       </ul>
       <div class="contact">
-        <a href="">CONTACT</a>
+        <a href="">CONTATO</a>
       </div>
     </header>
-    <div id="first-page-blue-sky">
+
+    <div id="first-page">
       <div class="first-page-content">
-        <h1 id="center-name">LEONARDO RIMOLO</h1>
-        <h2 id="center-h2">SOFTWARE DEVELOPER</h2>
+        <img src="./assets/assuntos-criativos-logo-burger-01-removebg-preview.png"alt="">
+        <h2 id="center-h2">THE BEST BURGERS IN POA</h2>
+
+        <a href="#second-page">
+          <div id="animation-seta"></div>
+        </a>
       </div>
-      <a href="#second-page-yellow">
-        <div id="animation-container"></div>
-      </a>
     </div>
-    <div id="second-page-yellow">
-      <div id="about-me">
-        <h1>ABOUT ME</h1>
+    <div id="second-page">
+      <div id="sobre-nos">
+        <h1>SOBRE NÓS</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
           explicabo voluptas maxime animi. Culpa, in totam! Vel, quidem magnam,
@@ -49,19 +55,62 @@
           eligendi beatae?
         </p>
       </div>
-      <div id="image">
+      <div id="bart-img">
         <img
-          src="./assets/png-clipart-simpsons-simpsons-removebg-preview.png"
+          src="./assets/Saiba-como-abrir-uma-hamburgueria-em-7-passos-1024x683.jpeg" width="600px"
           alt=""
         />
       </div>
     </div>
 
+    <div id="third-page">
+     <h1>CARDÁPIO</h1>
+      <div class="container">
+        <div class="card card0">
+          <div class="border">
+            <h3>Quadra Burguer</h3>
+            
+          </div>
+        </div>
+        <div class="card card1">
+          <div class="border">
+            <h3>Super Smash Burguer</h3>
+            
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="border">
+            <h3>Crisps Burguer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="card card3">
+          <div class="border">
+            <h3>Quadra Burguer</h3>
+            
+          </div>
+        </div>
+        <div class="card card4">
+          <div class="border">
+            <h3>Ben Stiller</h3>
+            
+          </div>
+        </div>
+        <div class="card card5">
+          <div class="border">
+            <h3>Patrick Stewart</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script src="main.js"></script>
     <script>
       const animation = bodymovin.loadAnimation({
-        container: document.getElementById("animation-container"),
+        container: document.getElementById("animation-seta"),
         path: "./swipe.json",
         render: "svg",
         loop: true,
@@ -69,8 +118,8 @@
         name: "test",
       });
       const animation2 = bodymovin.loadAnimation({
-        container: document.getElementById("animation-container2"),
-        path: "./dar.json",
+        container: document.getElementById("animation-rosquinha"),
+        path: "./dar1.json",
         render: "svg",
         loop: true,
         autoplay: true,
