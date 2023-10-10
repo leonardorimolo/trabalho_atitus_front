@@ -102,7 +102,7 @@ header {
 }
 
 /* PAGINA 1 */
-#first-page {
+#home {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -110,7 +110,7 @@ header {
   background-size: cover;
 }
 
-.first-page-content {
+.home-content {
   padding-top: 10%;
   height: 100%;
   display: flex;
@@ -128,7 +128,7 @@ header {
 
 
 /* PAGINA 2 */
-#second-page {
+#sobre-nos {
   width: 100%;
   height: 100%;
   background-color: #755F3C;
@@ -140,20 +140,20 @@ header {
   padding-right: 5%;
 }
 
-#second-page img{
+#sobre-nos img{
   border-radius: 10px;
 }
 
-#sobre-nos {
+#sobre-nos-div {
   width: 50%;
 }
 
-#sobre-nos h1 {
+#sobre-nos-div h1 {
   color: #F4AB33;
   font-size: 100px;
 }
 
-#sobre-nos p {
+#sobre-nos-div p {
   font-size: 32px;
   color: #fff;
 }
@@ -176,7 +176,7 @@ header {
 
 
 /* PAGINA 3 */
-#third-page {
+#cardapio {
   width: 100%;
   height: 200%;
   background-color: #EA4739;
@@ -185,7 +185,7 @@ header {
   align-items: center;
 }
 
-#third-page h1 {
+#cardapio h1 {
   padding-top: 5%;
   color: #fff;
   font-size: 100px;

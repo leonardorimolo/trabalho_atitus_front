@@ -12,11 +12,13 @@ window.addEventListener('scroll', () => {
 
 getTamanhoTela = () => {
   const tamanhoTela = window.innerHeight;
-  const pagina1 = document.querySelector('#first-page');
-  const pagina2 = document.querySelector('#second-page');
+  const pagina1 = document.querySelector('#home');
+  const pagina2 = document.querySelector('#sobre-nos');
+  
 
   pagina1.style.height = tamanhoTela + 'px';
   pagina2.style.height = tamanhoTela + 'px';
+  
 }
 
 getTamanhoTela();
